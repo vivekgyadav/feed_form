@@ -1,0 +1,112 @@
+#loader {
+    display: none;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#out-box{
+    width: 100%;
+    height: 1200px;
+    
+    padding: 10px 0px 0px 400px;
+   
+    background-color: rgb(53, 53, 53);
+}
+#out-box h1{
+    color: azure;
+}
+
+#mid-box{
+    width: 60%;
+    height: 80%;
+    padding: 40px 0px 0px 0px;
+    background-color: rgb(116, 114, 114);
+}
+#inn-box{
+    
+    width: 85%;
+    /* height: 890px; */
+    height: 90%;
+    padding-top: 30px;
+    padding-left: 50px;
+    margin-left: 50px;
+
+    background-color: rgb(192, 188, 188);
+    
+}
+#myForm{
+    width: 100%;
+}
+
+.gender {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.gender label {
+    width: auto; 
+}
+
+/* Style for Nationality */
+.nationality {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.nationality label {
+    width: auto; 
+}
+
+input, select, textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+.submit-button, .reset-button {
+    width: 40%;
+    padding: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.custom-file-upload {
+    width: auto;
+    padding: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#file {
+    display: none; 
+}
