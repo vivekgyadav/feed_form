@@ -1,0 +1,38 @@
+# Create database as name feedback .
+# Create table as name mx_feed_frm  with code :
+CREATE TABLE `mx_feed_frm` (
+  `id` int NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `address` text COLLATE utf8mb4_general_ci,
+  `country` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `state` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `city` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `phone` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `gender` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `nationality` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `feedback` text COLLATE utf8mb4_general_ci,
+  `file_name` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+# Create table as name cities  with code :
+CREATE TABLE `cities` (
+  `city_id` int NOT NULL,
+  `city_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `state_id` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+# Create table as name states  with code :
+CREATE TABLE `states` (
+  `state_id` int NOT NULL,
+  `state_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `country_id` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+# Create table as name countries  with code :
+CREATE TABLE `countries` (
+  `country_id` int NOT NULL,
+  `country_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
